@@ -1,0 +1,457 @@
+/*
+Theme Name: Goran
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 - Typography
+--------------------------------------------------------------*/
+blockquote {
+	padding-right: 24px;
+	padding-left: 0;
+	border-right: 2px solid #e74f4e;
+	border-left: 0;
+}
+pre:before {
+	right: 0;
+	left: auto;
+}
+
+/* Hero */
+.hero blockquote {
+	border-right-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Site Top Content */
+.site-top-content blockquote {
+	border-right-color: #f1f0f0;
+}
+
+/*--------------------------------------------------------------
+3.0 - Elements
+--------------------------------------------------------------*/
+li > ul,
+li > ol {
+	margin-right: 5%;
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+/* Password Protected */
+.post-password-form input[type="submit"] {
+	right: auto;
+	left: 0;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.4 Dropdown Toggle
+--------------------------------------------------------------*/
+.menu-item .dropdown-toggle {
+	right: auto;
+	left: 0;
+}
+.page_item_has_children > a,
+.menu-item-has-children > a {
+	padding-right: 0;
+	padding-left: 48px;
+}
+.footer-navigation .page_item_has_children > a,
+.footer-navigation .menu-item-has-children > a {
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+5.5 Footer Navigation
+--------------------------------------------------------------*/
+.footer-navigation li {
+	display: inline-block;
+	margin: 0 0 0 8px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.footer-navigation li:first-of-type {
+	margin-right: 0;
+	margin-left: 8px;
+}
+
+/*--------------------------------------------------------------
+5.6 Social Navigation
+--------------------------------------------------------------*/
+.site-content ul[id^="menu-social"] .page_item_has_children > a,
+.site-content ul[id^="menu-social"] .menu-item-has-children > a {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+.screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+9.0 Layout
+--------------------------------------------------------------*/
+/* Header */
+.site-top-content {
+	text-align: left;
+}
+
+/* Breadcrumbs */
+.entry-breadcrumbs a {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.entry-breadcrumbs a:after {
+	right: auto;
+	left: -12px;
+	border-right: 4px solid #c5c5c5;
+	border-left: 0;
+}
+
+/*--------------------------------------------------------------
+10.0 Widgets
+--------------------------------------------------------------*/
+/* Custom Menu */
+.widget_nav_menu ul[id^="menu-social"] li {
+	margin: 0 0 12px 8px;
+}
+
+/*--------------------------------------------------------------
+11.0 Content
+--------------------------------------------------------------*/
+/* More Link */
+.more-link:after {
+	display: none;
+}
+
+/* Page Links */
+.page-links > a,
+.page-links > span {
+	margin: 0 8px 6px 0;
+}
+
+/* Grid Page & Featured Page */
+.featured-page .entry-footer,
+.featured-page .entry-summary,
+.grid .entry-footer,
+.grid .entry-summary,
+.grid .type-jetpack-testimonial {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+12.0 Comments
+--------------------------------------------------------------*/
+.comment .comment-reply-link:after {
+	display: none;
+}
+.comment-author .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 12px;
+}
+
+/*--------------------------------------------------------------
+13.0 Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+13.2 Galleries
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+	float: right;
+}
+
+/* Columns */
+.gallery-columns-1 .gallery-item,
+.gallery-columns-5 .gallery-item,
+.gallery-columns-7 .gallery-item {
+	float: none;
+}
+.gallery-columns-2 .gallery-item:nth-of-type(2n-2),
+.gallery-columns-3 .gallery-item:nth-of-type(3n-3),
+.gallery-columns-4 .gallery-item:nth-of-type(2n-2),
+.gallery-columns-6 .gallery-item:nth-of-type(3n-3),
+.gallery-columns-8 .gallery-item:nth-of-type(2n-2),
+.gallery-columns-9 .gallery-item:nth-of-type(3n-3) {
+	clear: left;
+}
+.gallery-columns-2 .gallery-item:nth-of-type(2n-1),
+.gallery-columns-3 .gallery-item:nth-of-type(3n-2),
+.gallery-columns-4 .gallery-item:nth-of-type(2n-1),
+.gallery-columns-6 .gallery-item:nth-of-type(3n-2),
+.gallery-columns-8 .gallery-item:nth-of-type(2n-1),
+.gallery-columns-9 .gallery-item:nth-of-type(3n-2) {
+	clear: right;
+}
+
+/*--------------------------------------------------------------
+14.0 Jetpack
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+14.3 Infinite Scroll
+--------------------------------------------------------------*/
+#infinite-handle span:before {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+15.0 Responsive
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+15.1 x >= 600px
+--------------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+	/* Elements */
+	li > ul,
+	li > ol {
+		margin-right: 24px;
+		margin-left: 0;
+	}
+
+	.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.blog:not(.no-sidebar) .post-thumbnail, .search:not(.no-sidebar) .post-thumbnail,
+	.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.sidebar-left.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.sidebar-left.blog:not(.no-sidebar) .post-thumbnail, .sidebar-left.search:not(.no-sidebar) .post-thumbnail,
+	.sidebar-left.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail {
+		margin-left: 0;
+		margin-right: -24px;
+	}
+}
+
+/*--------------------------------------------------------------
+15.2 x >= 768px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	/* Pagination */
+	.comment-navigation .nav-previous,
+	.paging-navigation .nav-previous {
+		float: right;
+	}
+	.comment-navigation .nav-next,
+	.paging-navigation .nav-next {
+		float: left;
+		text-align: left;
+	}
+
+	.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.blog:not(.no-sidebar) .post-thumbnail, .search:not(.no-sidebar) .post-thumbnail,
+	.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.sidebar-left.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.sidebar-left.blog:not(.no-sidebar) .post-thumbnail, .sidebar-left.search:not(.no-sidebar) .post-thumbnail,
+	.sidebar-left.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail {
+		margin-left: 0;
+		margin-right: -48px;
+	}
+
+	/* Media */
+	.gallery-columns-5 .gallery-item {
+		float: right;
+	}
+	.gallery-columns-4 .gallery-item:nth-of-type(2n-2),
+	.gallery-columns-4 .gallery-item:nth-of-type(2n-1),
+	.gallery-columns-6 .gallery-item:nth-of-type(3n-3),
+	.gallery-columns-6 .gallery-item:nth-of-type(3n-2) {
+		clear: none;
+	}
+	.gallery-columns-4 .gallery-item:nth-of-type(4n-4),
+	.gallery-columns-5 .gallery-item:nth-of-type(5n-5),
+	.gallery-columns-6 .gallery-item:nth-of-type(6n-6) {
+		clear: left;
+	}
+	.gallery-columns-4 .gallery-item:nth-of-type(4n-3),
+	.gallery-columns-5 .gallery-item:nth-of-type(5n-4),
+	.gallery-columns-6 .gallery-item:nth-of-type(6n-5) {
+		clear: right;
+	}
+}
+
+/*--------------------------------------------------------------
+15.3 x >= 1020px
+--------------------------------------------------------------*/
+@media screen and (min-width: 1020px) {
+	/* Main Navigation */
+	.main-navigation {
+		margin-right: 0;
+		margin-left: 36px;
+	}
+	.main-navigation ul {
+		padding-right: 0;
+		text-align: left;
+	}
+	.main-navigation li {
+		margin-right: 0;
+		margin-left: 32px;
+		text-align: right;
+	}
+	.main-navigation ul ul {
+		float: right;
+		right: -999em;
+		left: auto;
+	}
+	.main-navigation ul ul ul {
+		right: -999em;
+		left: auto;
+		margin-right: 8px;
+		margin-left: 0;
+	}
+	.main-navigation ul ul li {
+		margin-left: 0;
+	}
+	.main-navigation ul ul.toggle-on {
+		right: auto;
+	}
+	.main-navigation ul ul ul.toggle-on {
+		right: 100%;
+		left: auto;
+	}
+
+	/* Dropdown Toggle */
+	.main-navigation ul ul .menu-item .dropdown-toggle:before,
+	.main-navigation ul ul .menu-item .dropdown-toggle:hover:before {
+		border-right: 4px solid #fff;;
+		border-left: 0;
+	}
+	.main-navigation ul ul .menu-item .dropdown-toggle.toggle-on:before,
+	.main-navigation ul ul .menu-item .dropdown-toggle.toggle-on:hover:before {
+		border-right: 0;
+		border-left: 4px solid #fff;
+	}
+	.main-navigation ul ul .page_item_has_children > a,
+	.main-navigation ul ul .menu-item-has-children > a {
+		padding-right: 8px;
+		padding-left: 56px;
+	}
+	.main-navigation ul ul .page_item_has_children > a .dropdown-toggle,
+	.main-navigation ul ul .menu-item-has-children > a .dropdown-toggle,
+	.hero-image .main-navigation ul ul .page_item_has_children > a .dropdown-toggle,
+	.hero-image .main-navigation ul ul .menu-item-has-children > a .dropdown-toggle,
+	.main-navigation ul ul .page_item_has_children > a .dropdown-toggle:focus,
+	.main-navigation ul ul .menu-item-has-children > a .dropdown-toggle:focus,
+	.hero-image .main-navigation ul ul .page_item_has_children > a .dropdown-toggle:focus,
+	.hero-image .main-navigation ul ul .menu-item-has-children > a .dropdown-toggle:focus {
+		right: auto;
+		left: 8px;
+	}
+
+	/* Footer Navigation */
+	.footer-navigation ul {
+		text-align: left;
+	}
+	.footer-navigation li {
+		margin: 0 8px 0 0;
+	}
+
+	/* Layout */
+	.content-area,
+	.site-branding,
+	.site-info {
+		float: right;
+		margin-right: 72px;
+		margin-left: 0;
+	}
+	.footer-navigation,
+	.main-navigation,
+	.widget-area {
+		float: left;
+	}
+	.featured-page,
+	.footer-navigation,
+	.footer-widget,
+	.front-page-widget,
+	.grid,
+	.widget-area {
+		margin-right: 0;
+		margin-left: 72px;
+	}
+	.featured-page,
+	.footer-widget,
+	.front-page-widget,
+	.grid {
+		float: right;
+	}
+	.featured-page:nth-of-type(3n+3),
+	.footer-widget:nth-of-type(3n+3),
+	.front-page-widget:nth-of-type(3n+3),
+	.grid:nth-of-type(3n+3) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.featured-page:nth-of-type(3n+1),
+	.footer-widget:nth-of-type(3n+1),
+	.front-page-widget:nth-of-type(3n+1),
+	.grid:nth-of-type(3n+1) {
+		clear: right;
+	}
+	.site-description,
+	.site-title {
+		text-align: right;
+	}
+
+	.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.blog:not(.no-sidebar) .post-thumbnail, .search:not(.no-sidebar) .post-thumbnail,
+	.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail {
+		margin-left: -72px;
+		margin-right: 0;
+	}
+
+	.sidebar-left.archive:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail,
+	.sidebar-left.blog:not(.no-sidebar) .post-thumbnail, .sidebar-left.search:not(.no-sidebar) .post-thumbnail,
+	.sidebar-left.single:not(.no-sidebar):not(.post-type-archive-jetpack-testimonial) .post-thumbnail {
+		margin-left: 0;
+		margin-right: -72px;
+	}
+
+	/* Media */
+	.gallery-columns-7 .gallery-item {
+		float: right;
+	}
+	.gallery-columns-8 .gallery-item:nth-of-type(2n-2),
+	.gallery-columns-8 .gallery-item:nth-of-type(2n-1),
+	.gallery-columns-9 .gallery-item:nth-of-type(3n-3),
+	.gallery-columns-9 .gallery-item:nth-of-type(3n-2) {
+		clear: none;
+	}
+	.gallery-columns-7 .gallery-item:nth-of-type(7n-7),
+	.gallery-columns-8 .gallery-item:nth-of-type(8n-8),
+	.gallery-columns-9 .gallery-item:nth-of-type(9n-9) {
+		clear: left;
+	}
+	.gallery-columns-7 .gallery-item:nth-of-type(7n-6),
+	.gallery-columns-8 .gallery-item:nth-of-type(8n-7),
+	.gallery-columns-9 .gallery-item:nth-of-type(9n-8) {
+		clear: right;
+	}
+
+}

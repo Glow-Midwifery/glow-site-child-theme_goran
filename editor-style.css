@@ -1,0 +1,531 @@
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+.rtl caption,
+.rtl th,
+.rtl td {
+	text-align: right;
+}
+blockquote,
+q {
+	quotes: "" "";
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+a img {
+	border: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 - Typography
+--------------------------------------------------------------*/
+html {
+	font-size: 100%;
+	line-height: 1.5em;
+}
+body {
+	color: #242424;
+	font-family: "Noto Sans", sans-serif;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: bold;
+}
+h1 {
+	margin: 0 auto 12px;
+	font-size: 2.25em;
+	line-height: 1.33333em;
+}
+h2 {
+	margin: 0 auto 12px;
+	font-size: 1.875em;
+	line-height: 1.6em;
+}
+h3 {
+	margin: 0 auto 16px;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+h4 {
+	margin: 0 auto 17px;
+	font-size: 1.375em;
+	line-height: 1.636364em;
+}
+h5 {
+	margin: 0 auto 21px;
+	font-size: 1.125em;
+	line-height: 1.33333em;
+}
+h6 {
+	margin: 0 auto 24px;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+p {
+	margin-bottom: 24px;
+}
+b,
+strong {
+	font-weight: bold;
+}
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+blockquote {
+	padding-left: 24px;
+	margin: 0 auto 24px;
+	border-left: 2px solid #e74f4e;
+	font-family: "Noto Serif", serif;
+}
+.rtl blockquote {
+	padding-right: 24px;
+	padding-left: 0;
+	border-right: 2px solid #e74f4e;
+	border-left: 0;
+}
+blockquote p {
+	margin-bottom: 0;
+}
+address {
+	margin: 0 0 24px;
+}
+pre,
+code,
+kbd,
+tt,
+var {
+	padding: 0 4px;
+	background: #f1f0f0;
+	font-family: "Droid Sans Mono", monospace;
+}
+pre {
+	position: relative;
+	overflow: auto;
+	padding: 24px;
+	padding-left: 48px;
+	margin-bottom: 24px;
+	max-width: 100%;
+	border: 1px solid #d2cfcf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+}
+pre:before {
+	content: '\f462';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 100%;
+	background: #e74f4e;
+	color: #fff;
+	font-family: "Genericons";
+	font-size: 16px;
+	text-align: center;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #242424;
+	cursor: help;
+}
+mark,
+ins {
+	padding: 0 4px;
+	background: #e74f4e;
+	color: #fff;
+	text-decoration: none;
+}
+sup,
+sub {
+	position: relative;
+	vertical-align: baseline;
+	height: 0;
+	font-size: 75%;
+	line-height: 0;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+3.0 - Elements
+--------------------------------------------------------------*/
+hr {
+	margin-bottom: 24px;
+	height: 1px;
+	border: 0;
+	background-color: #f1f0f0;
+}
+ul,
+ol {
+	margin: 0 0 24px 0;
+}
+ul {
+	list-style: square inside;
+}
+ol {
+	list-style: decimal inside;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 24px;
+}
+.rtl li > ul,
+.rtl li > ol {
+	margin-right: 24px;
+	margin-left: 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 24px 24px;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 24px;
+	width: 100%;
+	border-top: 1px solid #d2cfcf;
+	border-right: 1px solid #d2cfcf;
+}
+caption,
+th {
+	font-weight: bold;
+}
+th,
+td {
+	padding: 12px;
+	border-bottom: 1px solid #d2cfcf;
+	border-left: 1px solid #d2cfcf;
+}
+
+/*--------------------------------------------------------------
+4.0 - Navigation
+--------------------------------------------------------------*/
+a {
+	color: #e74f4e;
+	font-weight: bold;
+	text-decoration: none;
+	-moz-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+a.button,
+a.button-minimal {
+	display: inline-block;
+	padding: 10px 22px;
+	border: 2px solid #e74f4e;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a.button {
+	background: #e74f4e;
+	color: #fff;
+	text-shadow: none;
+}
+a.button-minimal {
+	color: #e74f4e;
+}
+
+/*--------------------------------------------------------------
+5.0 - Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+.alignnone {
+	vertical-align: bottom;
+}
+
+/*--------------------------------------------------------------
+6.0 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.gallery:before,
+.gallery:after {
+	content: '';
+	display: table;
+}
+.clear:after,
+.gallery:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+7.0 Layout
+--------------------------------------------------------------*/
+body#tinymce {
+	padding: 24px 24px 0 24px !important;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------
+8.0 Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+8.1 Images
+--------------------------------------------------------------*/
+img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Captions */
+.wp-caption {
+	border: 0;
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+8.2 Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin: -12px 0 12px;
+}
+.gallery .gallery-item {
+	float: left;
+	padding: 12px;
+	width: 100%;
+}
+.rtl .gallery .gallery-item {
+	float: right;
+}
+.gallery .gallery-item .gallery-icon a {
+	display: block;
+}
+.gallery .gallery-item .gallery-icon img {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	border: none;
+}
+.gallery .gallery-item + br {
+	display: none;
+}
+
+/* Columns */
+.gallery-columns-2 .gallery-item:nth-of-type(2n-2),
+.gallery-columns-3 .gallery-item:nth-of-type(3n-3),
+.gallery-columns-4 .gallery-item:nth-of-type(4n-4),
+.gallery-columns-5 .gallery-item:nth-of-type(5n-5),
+.gallery-columns-6 .gallery-item:nth-of-type(6n-6),
+.gallery-columns-7 .gallery-item:nth-of-type(7n-7),
+.gallery-columns-8 .gallery-item:nth-of-type(8n-8),
+.gallery-columns-9 .gallery-item:nth-of-type(9n-9),
+.rtl .gallery-columns-2 .gallery-item:nth-of-type(2n-1),
+.rtl .gallery-columns-3 .gallery-item:nth-of-type(3n-2),
+.rtl .gallery-columns-4 .gallery-item:nth-of-type(4n-3),
+.rtl .gallery-columns-5 .gallery-item:nth-of-type(5n-4),
+.rtl .gallery-columns-6 .gallery-item:nth-of-type(6n-5),
+.rtl .gallery-columns-7 .gallery-item:nth-of-type(7n-6),
+.rtl .gallery-columns-8 .gallery-item:nth-of-type(8n-7),
+.rtl .gallery-columns-9 .gallery-item:nth-of-type(9n-8), {
+	clear: right;
+}
+.gallery-columns-2 .gallery-item:nth-of-type(2n-1),
+.gallery-columns-3 .gallery-item:nth-of-type(3n-2),
+.gallery-columns-4 .gallery-item:nth-of-type(4n-3),
+.gallery-columns-5 .gallery-item:nth-of-type(5n-4),
+.gallery-columns-6 .gallery-item:nth-of-type(6n-5),
+.gallery-columns-7 .gallery-item:nth-of-type(7n-6),
+.gallery-columns-8 .gallery-item:nth-of-type(8n-7),
+.gallery-columns-9 .gallery-item:nth-of-type(9n-8),
+.rtl .gallery-columns-2 .gallery-item:nth-of-type(2n-2),
+.rtl .gallery-columns-3 .gallery-item:nth-of-type(3n-3),
+.rtl .gallery-columns-4 .gallery-item:nth-of-type(4n-4),
+.rtl .gallery-columns-5 .gallery-item:nth-of-type(5n-5),
+.rtl .gallery-columns-6 .gallery-item:nth-of-type(6n-6),
+.rtl .gallery-columns-7 .gallery-item:nth-of-type(7n-7),
+.rtl .gallery-columns-8 .gallery-item:nth-of-type(8n-8),
+.rtl .gallery-columns-9 .gallery-item:nth-of-type(9n-9) {
+	clear: left;
+}
+.gallery-columns-1 .gallery-item {
+	float: none;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	width: 33.33333%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	width: 16.66667%;
+}
+.gallery-columns-7 .gallery-item {
+	width: 14.28571%;
+}
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	width: 11.11111%;
+}
+
+/* Captions */
+.gallery-caption,
+.wp-caption-text {
+	padding: 12px;
+	background: #f1f0f0;
+	text-align: center;
+	font-size: 0.875em;
+	line-height: 1.71429em;
+}
+
+/*--------------------------------------------------------------
+8.3 Iframes
+--------------------------------------------------------------*/
+embed,
+iframe,
+object,
+video {
+	display: block;
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+9.0 Editor
+--------------------------------------------------------------*/
+.mceItemTable,
+.mceItemTable td,
+.mceItemTable th,
+.mceItemTable caption,
+.mceItemVisualAid {
+	border: none;
+}
+img.mce-wp-nextpage,
+img.mce-wp-more {
+	width: 100%;
+	margin: 24px 0;
+}

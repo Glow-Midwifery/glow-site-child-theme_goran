@@ -1,0 +1,121 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Goran 1.2.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/goran\n"
+"POT-Creation-Date: 2016-01-01 04:04:58+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: footer.php:28
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:28
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:30
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported
+#. 	 * by Noto Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:86
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: To add an additional Noto Sans character subset specific to
+#. your language, translate this to 'cyrillic', 'greek', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:90
+msgctxt ""
+"Noto Sans font: add new subset (cyrillic, greek, devanagari or vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported
+#. 	 * by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:124
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: To add an additional Noto Serif character subset specific to
+#. your language, translate this to 'cyrillic', 'greek' or 'vietnamese'. Do not
+#. translate into your own language.
+#: functions.php:128
+msgctxt "Noto Serif font: add new subset (cyrillic, greek, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported
+#. 	 * by Droid Mono Sans, translate this to 'off'. Do not translate into your
+#. own language.
+#: functions.php:160
+msgctxt "Droid Sans Mono font: on or off"
+msgid "on"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:43
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Top Area Content"
+msgstr ""
+
+#: inc/template-tags.php:26
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr ""
+
+#: inc/template-tags.php:32
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Goran"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/goran/"
+msgstr ""
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid ""
+"Goran is a functional and responsive multi-purpose theme that is the perfect "
+"solution for your business’s online presence."
+msgstr ""
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/"
+msgstr ""

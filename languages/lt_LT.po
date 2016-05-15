@@ -1,0 +1,107 @@
+# Translation of Goran in Lithuanian
+# This file is distributed under the same license as the Goran package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-03-23 20:48:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Goran\n"
+
+#: inc/template-tags.php:30
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr "<span class=\"meta-nav\">Paskelbta:</span>%title"
+
+#: inc/template-tags.php:32
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr "<span class=\"meta-nav\">Ankstesnis įrašas</span>%title"
+
+#: inc/template-tags.php:33
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr "<span class=\"meta-nav\">Kitas įrašas</span>%title"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Goran is a functional and responsive multi-purpose theme that is the perfect solution for your business’s online presence."
+msgstr "Goran yra funkcionali ir interaktyvi įvairios paskirties tema, puikus sprendimas jūsų verslo interneto tinklalapiui."
+
+#: inc/customizer.php:28
+msgid "Top Area Content"
+msgstr "Viršutinės skilties turinys"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Goran"
+msgstr "Goran"
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/goran/"
+msgstr "https://wordpress.com/themes/goran/"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/themes/"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Noto Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:86
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr "įjungta"
+
+#. translators: To add an additional Noto Sans character subset specific to
+#. your language, translate this to 'cyrillic', 'greek', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:90
+msgctxt "Noto Sans font: add new subset (cyrillic, greek, devanagari or vietnamese)"
+msgid "no-subset"
+msgstr "nėra poaibio"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:124
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "įjungta"
+
+#. translators: To add an additional Noto Serif character subset specific to
+#. your language, translate this to 'cyrillic', 'greek' or 'vietnamese'. Do not
+#. translate into your own language.
+#: functions.php:128
+msgctxt "Noto Serif font: add new subset (cyrillic, greek, vietnamese)"
+msgid "no-subset"
+msgstr "nėra poaibio"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Droid Mono Sans, translate this to 'off'. Do not translate into your
+#. own language.
+#: functions.php:160
+msgctxt "Droid Sans Mono font: on or off"
+msgid "on"
+msgstr "įjungta"
+
+#: header.php:43
+msgid "Menu"
+msgstr "Meniu"
+
+#: inc/template-tags.php:26
+msgid "Post navigation"
+msgstr "Įrašo naršymas"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Praleisti ir eiti į turinį"
+
+#: footer.php:30
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s sukūrė %2$s."
+
+#: footer.php:28
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"

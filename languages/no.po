@@ -1,0 +1,95 @@
+# Translation of Goran in Norwegian
+# This file is distributed under the same license as the Goran package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-02-28 15:42:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Goran\n"
+
+#: inc/template-tags.php:30
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr "<span class=\"meta-nav\">Publisert i</span>%title"
+
+#: inc/template-tags.php:32
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr "<span class=\"meta-nav\">Forrige innlegg</span>%title"
+
+#: inc/template-tags.php:33
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr "<span class=\"meta-nav\">Neste innlegg</span>%title"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Goran is a functional and responsive multi-purpose theme that is the perfect solution for your business’s online presence."
+msgstr "Goran er et funksjonelt og responsivt flerbruks-tema som passer perfekt for virksomheter. "
+
+#: inc/customizer.php:28
+msgid "Top Area Content"
+msgstr "Innhold i toppområdet"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "Goran"
+msgstr "Goran"
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/goran/"
+msgstr "https://wordpress.com/themes/goran/"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/goran/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/temaer"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Noto Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:86
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr "på"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:124
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "på"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Droid Mono Sans, translate this to 'off'. Do not translate into your
+#. own language.
+#: functions.php:160
+msgctxt "Droid Sans Mono font: on or off"
+msgid "on"
+msgstr "på"
+
+#: header.php:43
+msgid "Menu"
+msgstr "Meny"
+
+#: inc/template-tags.php:26
+msgid "Post navigation"
+msgstr "Innleggsnavigasjon"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Gå til innhold"
+
+#: footer.php:30
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s av %2$s."
+
+#: footer.php:28
+msgid "Proudly powered by %s"
+msgstr "Stolt drevet av %s"
+
+#: footer.php:28
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
