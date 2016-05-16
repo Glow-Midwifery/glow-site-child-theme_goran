@@ -1,0 +1,200 @@
+/*making room for the glow lady*/
+.site-title {
+    text-align: center;
+    width: 370px;
+}
+
+/* removing bold style on site title */
+.site-title a{
+  font-weight: normal;
+}
+
+.glow-header-logo{
+    width: 120px;
+    height: auto;
+    float: left;
+    margin-left: -60px;
+    margin-top: -10px;
+}
+
+.glow-header-text{
+	float: left;
+	margin-right: 10px;
+	width: 300px;
+}
+
+.page-template-front-page .hero article{
+    background: rgba(0,0,0,0.2);
+    padding: 0 10px;
+    position: relative;
+    bottom: -24px;
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px){
+	.page-template-front-page .hero article{
+	    bottom: -48px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.page-template-front-page .hero article{
+    	bottom: -96px;
+	}
+}
+
+
+
+
+@media(max-width: 1353px){
+  /*makes brand smaller during screen sizes 
+  just before tablet and after*/
+	.site-title{
+    font-size: 60px;
+	}
+}
+
+.hero .page-title {
+  text-transform: uppercase;
+  font-family: josefin sans;
+  font-size: 2em;
+}
+
+.hero-image .hero {
+  background-color: #ffffff;
+}
+
+/*added to insure feature image height is 
+large enough to accomidate images*/
+
+.hero-image .hero,
+.hero.with-featured-image{
+	min-height: 265px;
+}
+
+#menu-main-menu.clear {
+  font-family: Josefin sans;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.featured-page .entry-title {
+  text-transform: uppercase;
+  font-family: josefin sans;
+  font-size: 1em;
+}
+
+hr {
+  background-color: #000;
+}
+
+ul{
+  list-style-position: outside;
+}
+
+li {
+  font-family: Imprima;
+}
+
+/* main menu items */
+
+.main-navigation li {
+  font-family: 'Josefin Sans';
+  text-transform: none;
+  font-size: 18px;
+  margin-right: 19px;
+}
+
+/* this is for the dropdown menu background colors*/
+
+/* uncomment this
+.main-navigation ul ul li a {
+	background: green;
+}
+.main-navigation ul ul li a:hover{
+	background: blue; 
+}
+*/
+
+/*this is for the featured page buttons*/
+
+/* uncomment this
+.featured-page .more-link, 
+.grid .more-link {
+	background: green;
+}
+.featured-page .more-link:hover, 
+.grid .more-link:hover{
+	background: blue; 
+} */
+
+
+/* custom blog header color */
+
+/* uncomment this
+.blog .site-header{
+	background: #E96868;
+} */
+
+/* this just adds a transparent color 
+to the btn style so it will work with any 
+background color */
+
+/* uncomment this
+.blog .site-header .main-navigation .menu-item .dropdown-toggle, 
+.blog .site-header .main-navigation .menu-item .dropdown-toggle:focus {
+  background: rgba(0,0,0,.3);
+  border-color: rgba(0,0,0,.1);
+}
+.blog .site-header .main-navigation .menu-item .dropdown-toggle:hover{
+  background: rgba(0,0,0,.1);
+}
+*/
+
+
+
+/* the below styles will apply to the blog pages as well
+if you would prefer that not to happen add the .blog css 
+located ^ above to each of the media sections @media(width){stuff} 
+located  ? below and place them below all the .site-header{} 
+styles for each section*/
+
+
+/*header style for TABLET sizes*/
+
+/* uncomment this
+@media(max-width: 1119px){
+  .site-header{
+    background: yellow;
+  }
+
+  .site-header .main-navigation .menu-item .dropdown-toggle, 
+  .site-header .main-navigation .menu-item .dropdown-toggle:focus {
+      background: rgba(0,0,0,.3);
+      border-color: rgba(0,0,0,.1);
+  }
+  .site-header .main-navigation .menu-item .dropdown-toggle:hover{
+    background: rgba(0,0,0,.1);
+  }
+}
+*/
+
+/*header style for PHONE sizes*/
+
+/* uncomment this
+@media(max-width: 560px){
+  .site-header{
+    background: red;
+  }
+
+  .site-header .main-navigation .menu-item .dropdown-toggle, 
+  .site-header .main-navigation .menu-item .dropdown-toggle:focus {
+      background: rgba(0,0,0,.3);
+      border-color: rgba(0,0,0,.1);
+  }
+  .site-header .main-navigation .menu-item .dropdown-toggle:hover{
+    background: rgba(0,0,0,.1);
+  }
+}
+*/
