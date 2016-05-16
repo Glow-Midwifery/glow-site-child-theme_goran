@@ -194,6 +194,8 @@ function goran_scripts() {
 	wp_enqueue_script( 'goran-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140807', true );
 
 	wp_enqueue_script( 'goran-script', get_stylesheet_directory_uri() . '/js/goran.js', array( 'jquery' ), '20140808', true );
+
+	wp_enqueue_style( 'custom-app', get_stylesheet_directory_uri() . '/css/custom_app.css', null, null );
 }
 add_action( 'wp_enqueue_scripts', 'goran_scripts', 11 );
 
