@@ -1,3 +1,17 @@
+
+Please use caution when updating this theme, there is a github repo with the "child theme changes".  (https://github.com/Glow-Midwifery/glow-site-child-theme_goran).
+
+A list of files changed so far are:
+
+* readme.txt
+* header.php
+* functions.php
+
+A list of new files are:
+* css/*.css
+* assets/*.jpg *.png *.etc...
+
+
 === Goran ===
 
 Contributors: automattic

@@ -34,7 +34,12 @@
 
 		<div class="site-branding">
 			<?php edin_the_site_logo(); ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title clear">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img class="glow-header-logo" src="/wp-content/themes/goran/assets/glowLady.jpg" alt="glow-logo" title="glowmidwifery.com">
+					<span class="glow-header-text"><?php bloginfo( 'name' ); ?></span>
+				</a>
+			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
 
