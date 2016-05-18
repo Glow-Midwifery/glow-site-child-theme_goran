@@ -10,6 +10,8 @@ A list of files changed so far are:
 A list of new files are:
 * css/*.css
 * assets/*.jpg *.png *.etc...
+* page-templates/*.php
+* content-grid.php
 
 
 === Goran ===
