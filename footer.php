@@ -26,7 +26,7 @@
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
 		<div class="site-info">
-			© glowmidwifery.com | Great Love Opens The Way<br>
+			© glowmidwifery.com | great love opens the way<br>
 			<div class="fbbtn">
 				<div class="fb-like" data-href="https://www.facebook.com/GlowMidwifery/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
 			</div>
