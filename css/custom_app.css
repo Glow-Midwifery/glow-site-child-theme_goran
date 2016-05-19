@@ -29,6 +29,14 @@
     padding: 0 2px;
 }
 
+
+@media screen and (max-width: 600px){
+  .child-page-thumb{
+      width:100%;
+      float: none;
+  }
+}
+
 .child-page-thumb a{
       text-transform: uppercase;
     font-family: josefin sans;
@@ -233,6 +241,7 @@ font-weight: 400;
 .site-footer .footer-navigation li a{
     font-weight: 400;
     text-transform: none;
+    font-family: josefin sans;
 }
 .footer-navigation li
 @media(min-width: 1019px) and (max-width: 1229px){
