@@ -1,7 +1,61 @@
 /*making room for the glow lady*/
+.site-branding{
+	 width: 100%;
+    margin: 0;
+}
+
+.ngg-slideshow {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 600px){
+
+  .site-branding{
+    width: 40%;
+  }
+}
+
+.site-info{
+  font-family: josefin sans;
+}
+.child-page-thumb{
+    width:50%;
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+    float: left;
+    padding: 0 2px;
+}
+
+
+@media screen and (max-width: 600px){
+  .child-page-thumb{
+      width:100%;
+      float: none;
+  }
+}
+
+.child-page-thumb a{
+      text-transform: uppercase;
+    font-family: josefin sans;
+    font-size: 1em;
+}
+.child-page-thumb img{
+  border:3px solid transparent;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.child-page-thumb a:hover img{
+  border-color: #e74f4e;
+}
+
 .site-title {
     text-align: center;
-    width: 370px;
+        width: 100%;
+    margin: 0;
+    padding: 10px;
 }
 
 /* removing bold style on site title */
@@ -10,17 +64,17 @@
 }
 
 .glow-header-logo{
-    width: 120px;
+    width: 30%;
     height: auto;
     float: left;
-    margin-left: -60px;
-    margin-top: -10px;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .glow-header-text{
-	float: left;
-	margin-right: 10px;
-	width: 300px;
+    float: left;
+    margin-left: 1%;
+    width: 69%;
 }
 
 .page-template-front-page .hero article{
@@ -30,6 +84,75 @@
     bottom: -24px;
     margin: 0;
     width: 100%;
+}
+
+@media screen and (min-width: 1230px){
+
+  .glow-header-text{
+    margin-top: 35px;
+    font-size: 80px;
+    margin-left: 2%;
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 1019px){
+  .site-header{
+    background: #456980;
+  }
+  .site-branding{
+    width: 100%;
+  }
+  .site-title{
+    font-size: 50px;
+  }
+  .glow-header-logo{
+    max-width: 140px;
+    margin-top: 10px;
+  }
+  .glow-header-text{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 1019px){
+  .glow-header-text{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 400px){
+
+  .glow-header-text{
+   font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .page-template-front-page.hero-image .hero, 
+  .page-template-front-page.hero.with-featured-image{
+      background-position: 50% 0;
+      background-size: auto 350px;
+  }
+
+  .page-template-front-page .hero-image .hero, 
+  .page-template-front-page .hero.with-featured-image{
+        background-size: 130%;
+      background-position: 50% 0;
+      padding: 380px 0 0 0;
+      color: #333;
+  }
+
+  .page-template-front-page .hero article{
+        background: none;
+      color: #333 !important;
+      text-shadow: none;
+      margin-top: 340px;
+  }
+
+  .page-template-front-page .hero .entry-footer a{
+        color: #e74f4e;
+  }
 }
 
 @media screen and (min-width: 600px){
@@ -44,7 +167,11 @@
 	}
 }
 
-
+@media screen and (min-width: 1230px){
+	body.hero-image .hero.without-featured-image article{
+	    bottom: -144px;
+	}
+}
 
 
 @media(max-width: 1353px){
@@ -70,7 +197,7 @@ large enough to accomidate images*/
 
 .hero-image .hero,
 .hero.with-featured-image{
-	min-height: 265px;
+	min-height: 258px;
 }
 
 #menu-main-menu.clear {
@@ -105,7 +232,50 @@ li {
   font-size: 18px;
   margin-right: 19px;
 }
+.main-navigation li a{
+font-weight: 400;
+}
 
+
+
+.site-footer .footer-navigation li a{
+    font-weight: 400;
+    text-transform: none;
+    font-family: josefin sans;
+}
+.footer-navigation li
+@media(min-width: 1019px) and (max-width: 1229px){
+  .the-exc{min-height: 290px;}
+.front-fp-thumb{min-height: 210px;}
+}
+
+@media(min-width: 1230px) {
+.the-exc{min-height: 240px;}
+.front-fp-thumb{min-height: 260px;}
+}
+
+.page-template-page-blog .blog-hero{
+    width: 100%;
+    height: 500px;
+    background: #F00;
+    color: #fff;
+    position: relative;
+}
+
+
+.ccf-form ccf-theme-default{
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+font-size: 12px;
+max-width: 100%;
+}
+}
 /* this is for the dropdown menu background colors*/
 
 /* uncomment this
@@ -153,8 +323,8 @@ background color */
 */
 
 
-
 /*adding a fake comment*/
+/*adding another fake comment to test*/
 
 /* the below styles will apply to the blog pages as well
 if you would prefer that not to happen add the .blog css 
