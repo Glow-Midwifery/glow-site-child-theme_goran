@@ -55,9 +55,9 @@ get_header(); ?>
 									?>
 								</div><!-- .entry-content -->
 
-								<footer class="entry-footer">
+								<!-- <footer class="entry-footer">
 									<?php edin_entry_meta(); ?>
-								</footer><!-- .entry-footer -->
+								</footer>--> <!-- .entry-footer --> 
 							</article><!-- #post-## -->
 						<?php endwhile; ?>
 

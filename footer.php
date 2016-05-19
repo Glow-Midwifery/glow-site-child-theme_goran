@@ -10,6 +10,7 @@
 
 	</div><!-- #content -->
 
+
 	<?php get_sidebar( 'footer' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -25,7 +26,7 @@
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
 		<div class="site-info">
-			© glowmidwifery.com | Great love opens the way<br>
+			© glowmidwifery.com | Great Love Opens The Way<br>
 			<div class="fbbtn">
 				<div class="fb-like" data-href="https://www.facebook.com/GlowMidwifery/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
 			</div>

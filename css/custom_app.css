@@ -4,8 +4,10 @@
     margin: 0;
 }
 
-.ngg-slideshow .ngg-gallery-slideshow-image{
-  top: 8% !important;
+.ngg-slideshow {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 600px){
@@ -13,6 +15,32 @@
   .site-branding{
     width: 40%;
   }
+}
+
+.site-info{
+  font-family: josefin sans;
+}
+.child-page-thumb{
+    width:50%;
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+    float: left;
+    padding: 0 2px;
+}
+
+.child-page-thumb a{
+      text-transform: uppercase;
+    font-family: josefin sans;
+    font-size: 1em;
+}
+.child-page-thumb img{
+  border:3px solid transparent;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.child-page-thumb a:hover img{
+  border-color: #e74f4e;
 }
 
 .site-title {
@@ -161,7 +189,7 @@ large enough to accomidate images*/
 
 .hero-image .hero,
 .hero.with-featured-image{
-	min-height: 265px;
+	min-height: 258px;
 }
 
 #menu-main-menu.clear {
@@ -196,10 +224,17 @@ li {
   font-size: 18px;
   margin-right: 19px;
 }
+.main-navigation li a{
+font-weight: 400;
+}
 
 
 
-
+.site-footer .footer-navigation li a{
+    font-weight: 400;
+    text-transform: none;
+}
+.footer-navigation li
 @media(min-width: 1019px) and (max-width: 1229px){
   .the-exc{min-height: 290px;}
 .front-fp-thumb{min-height: 210px;}
@@ -219,6 +254,19 @@ li {
 }
 
 
+.ccf-form ccf-theme-default{
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+font-size: 12px;
+max-width: 100%;
+}
+}
 /* this is for the dropdown menu background colors*/
 
 /* uncomment this
