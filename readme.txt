@@ -12,6 +12,7 @@ A list of new files are:
 * assets/*.jpg *.png *.etc...
 * page-templates/*.php
 * content-grid.php
+* content-page.php
 
 
 === Goran ===
